@@ -88,19 +88,19 @@
                 <div class="col-md-3">
                   <ul class="breadcrumb main-nav no-space">
                     <li>
-                      <a href="#" ><i class="fa fa-facebook"></i></a>
+                      <a href="https://www.facebook.com/profile.php?id=100006795131000" target="_blank" ><i class="fa fa-facebook"></i></a>
                     </li>
                     <li>
-                      <a href="#"  ><i class="fa fa-google"></i></a>
+                      <a href="https://www.instagram.com/shisha0372/"  target="_blank" ><i class="fa fa-instagram"></i></a>
                     </li>
                     <li>
-                      <a href="#"  ><i class="fa fa-twitter"></i></a>
+                      <a href="https://twitter.com/ShishAnus"  target="_blank"><i class="fa fa-twitter"></i></a>
                     </li>
                     <li>
-                      <a href="#" ><i class="fa fa-linkedin"></i></a>
+                      <a href="https://www.linkedin.com/in/danylo-shyshkovskyi/" target="_blank" ><i class="fa fa-linkedin"></i></a>
                     </li>
                     <li>
-                      <a href="#" ><i class="fa fa-github"></i></a>
+                      <a href="https://github.com/DanyloShyshkovskyi" target="_blank" ><i class="fa fa-github"></i></a>
                     </li>
                   </ul>
                 </div>
@@ -131,7 +131,7 @@
                   and am able to take instructions from all levels and
                   build up good working relationships with all colleagues.Iam flexible,reliable and possess excellent
                   time keeping skills.</p>
-                  <a href="#" class="btn btn-flat-line btn-default btn-outline-dark dark-font margin-top-20"><i class="fa fa-download"></i>  Download CV</a>
+                  <a href="/assets/theme/MyCV.pdf" download class="btn btn-flat-line btn-default btn-outline-dark dark-font margin-top-20"><i class="fa fa-download"></i>  Download CV</a>
               </div>
             </div>
             <div class="bg-dark clearfix">
@@ -141,7 +141,7 @@
                   <strong class="fix-width-100"><i class="fa fa-skype margin-right-5"></i> Skype</strong> : danikshisha<br/>
                   <strong class="fix-width-100"><i class="fa fa-phone margin-right-5"></i> Phone</strong> : +48 796 391 913<br/>
                   <strong class="fix-width-100"><i class="fa fa-envelope margin-right-5"></i> Email</strong> : danyloshyshkovskyi@gmail.com<br/>
-                  <strong class="fix-width-100"><i class="fa fa-globe margin-right-5"></i> Website</strong> : www.someonedomain.me<br/>
+                  <strong class="fix-width-100"><i class="fa fa-globe margin-right-5"></i> Website</strong> : <a class="no-margin color-light cvlink" href="https://cv-danyloshyshkovskyi.vercel.app/"> cv-danyloshyshkovskyi.vercel.app</a><br/>
                   <strong class="fix-width-100"><i class="fa fa-location-arrow margin-right-5"></i> Adress</strong> : ul. Gagarina, Wroclaw, Poland.<br/>
                 </p>
               </div>
@@ -372,24 +372,24 @@
         </div>
 
 
-        <!--TESTIMONIAL-->
+      <!--  TESTIMONIAL
         <div class="parallax-bg black-light bg2">
           <div class="container-medium">
             <div class="block-page ">
               <div id="carousel-example-generic" class="carousel slide carousel-testi" data-ride="carousel">
-                <!-- Indicators -->
+                 Indicators 
                 <ol class="carousel-indicators">
                   <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
                   <li data-target="#carousel-example-generic" data-slide-to="1"></li>
                   <li data-target="#carousel-example-generic" data-slide-to="2"></li>
                 </ol>
 
-                <!-- Wrapper for slides -->
+               Wrapper for slides 
                 <div class="carousel-inner" role="listbox">
                   <div class="item active">
                     <div class="box-testimonial">
                       <img src="assets/theme/images/people/1.jpg" alt="" class="img-profile">
-                      <h4 class="color-dark text-capitalize no-margin-top line-dash-bottom"> Well Done Jhone! This guy is Really amazing.  </h4>
+                      <h4 class="color-dark text-capitalize no-margin-top line-dash-bottom"> Well Done Daniel! This guy is Really amazing.  </h4>
                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                       <p><a href="#"><img src="assets/theme/images/patner/1.png" alt="" class="img-logo-client"></a></p>
                       <p class="font-alt no-margin color-dark">Colie - Css Founder</p>
@@ -417,7 +417,7 @@
               </div>
             </div>
           </div>
-        </div><!--END TESTIMONIAL-->
+        </div>END TESTIMONIAL-->
       </section><!--END PORTFOLIO-->
 
       <!--BLOG-->
@@ -524,22 +524,22 @@
                     <input type="hidden" name="subject" value="Message Contact Form">
                     <div class="form-group">
                       <label>Your Name (*)</label>
-                      <input type="text" class="form-control form-flat" name="fullname" required>
+                      <input id="name1" type="text" class="form-control form-flat" name="fullname" required>
                     </div>
                     <div class="form-group">
                       <label>Email (*)</label>
-                      <input type="email" class="form-control form-flat" name="email" required>
+                      <input id="email1" type="email" class="form-control form-flat" name="email" required>
                     </div>
                     <div class="form-group">
                       <label>Your Message (*)</label>
-                      <textarea class="form-control form-flat" name="message" rows="8" required></textarea>
+                      <textarea id="message1" class="form-control form-flat" name="message" rows="8" required></textarea>
                     </div>
 
                     <div class="form-group">
                       <div id="captcha1"></div>
                     </div>
                     <div class="form-group ">
-                      <button type="submit" class="btn btn-flat-solid primary-btn" >Send Message</button>
+                      <button type="submit" onclick="sendEmail1()" class="btn btn-flat-solid primary-btn" >Send Message</button>
                     </div>
                     <div class="form-group">
                       <div class="preload-submit hidden"><hr/> <i class="fa fa-spinner fa-spin"></i> Please Wait ...</div>
@@ -553,15 +553,15 @@
                     <input type="hidden" name="file" id="file-att" value="">
                     <div class="form-group">
                       <label>Your Name (*)</label>
-                      <input type="text" class="form-control form-flat" name="fullname" required>
+                      <input id="name2" type="text" class="form-control form-flat" name="fullname" required>
                     </div>
                     <div class="form-group">
                       <label>Email (*)</label>
-                      <input type="email" class="form-control form-flat" name="email" required>
+                      <input id="email2"  type="email" class="form-control form-flat" name="email" required>
                     </div>
                     <div class="form-group">
                       <label>Short Description About of Project (*)</label>
-                      <textarea class="form-control form-flat" name="message" rows="8" required></textarea>
+                      <textarea id="message2" class="form-control form-flat" name="message" rows="8" required></textarea>
                     </div>
 
                     <div class="form-group">
@@ -578,7 +578,7 @@
                     </div>
 
                     <div class="form-group">
-                      <button type="submit" class="btn btn-flat-solid primary-btn">Send Request</button>
+                      <button type="submit"  onclick="sendEmail2()" class="btn btn-flat-solid primary-btn">Send Request</button>
                     </div>
 
                     <div class="form-group">
@@ -595,10 +595,10 @@
           <div class="map-area show" id="map-contact"></div>
           <div class="hidden map-contact-body">
             <div class="map-content">
-              <h4 class="no-margin-top font-alt">Iam Here</h4>
-              <p><i class="fa fa-map-marker"></i> <strong>Address:</strong> 8723 Bogor, West Java</p>
-              <p><i class="fa fa-mobile"></i> <strong>Phone:</strong> 87-3898-221 </p>
-              <p><i class="fa fa-envelope"></i> <strong>Email:</strong> someone@company.com</p>
+              <h4 class="no-margin-top font-alt">I am Here</h4>
+              <p><i class="fa fa-map-marker"></i> <strong>Address:</strong> Gagarina, Wroclaw, Poland</p>
+              <p><i class="fa fa-mobile"></i> <strong>Phone:</strong> +48 796 391 913</p>
+              <p><i class="fa fa-envelope"></i> <strong>Email:</strong> danyloshyshkovskyi@gmail.com</p>
             </div>
           </div>
           <!--END MAP-->
@@ -614,24 +614,21 @@
           </div>
           <ul class="list-inline social-links text-center">
             <li>
-              <a href="#"  data-toggle="tooltip"  data-placement="top" title="Facebook"><i class="fa fa-facebook"></i></a>
+              <a href="https://www.facebook.com/profile.php?id=100006795131000" target="_blank" data-toggle="tooltip"  data-placement="top" title="Facebook"><i class="fa fa-facebook"></i></a>
             </li>
             <li>
-              <a href="#"  data-toggle="tooltip"  data-placement="top" title="Google"><i class="fa fa-google"></i></a>
+              <a href="https://www.instagram.com/shisha0372/" target="_blank" data-toggle="tooltip"  data-placement="top" title="Google"><i class="fa fa-instagram"></i></a>
             </li>
             <li>
-              <a href="#"  data-toggle="tooltip"  data-placement="top" title="Twitter"><i class="fa fa-twitter"></i></a>
+              <a href="https://twitter.com/ShishAnus" target="_blank" data-toggle="tooltip"  data-placement="top" title="Twitter"><i class="fa fa-twitter"></i></a>
             </li>
             <li>
-              <a href="#"  data-toggle="tooltip"  data-placement="top" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+              <a href="https://www.linkedin.com/in/danylo-shyshkovskyi/"  target="_blank" data-toggle="tooltip"  data-placement="top" title="Linkedin"><i class="fa fa-linkedin"></i></a>
             </li>
             <li>
-              <a href="#"  data-toggle="tooltip"  data-placement="top" title="Github"><i class="fa fa-github"></i></a>
+              <a href="https://github.com/DanyloShyshkovskyi" target="_blank" data-toggle="tooltip"  data-placement="top" title="Github"><i class="fa fa-github"></i></a>
             </li>
           </ul>
-          <p class="text-center no-margin">
-            Solid - All Rights Reserved &COPY; 2014
-          </p>
           <a href="#home" class="back-to-top"><i class="fa fa-angle-double-up" ></i></a>
         </div>
       </footer><!--END FOOTER-->
@@ -666,6 +663,48 @@
     <script src="assets/plugins/Simple-Ajax-Uploader/SimpleAjaxUploader.min.js"></script>
     <!-- validate jquery-->
     <script src="assets/plugins/validator/jquery.validate.min.js"></script>
+
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+
+<script src="js/FileSaver.min.js"></script>
+<script src="js/script.js"></script>
+
+    <script type="text/javascript">
+    function sendEmail1(){
+      var name = document.getElementById("name1").value;
+      var email = document.getElementById("email1").value;
+      var message = document.getElementById("message1").value;
+      Email.send({
+    Host : "smtp.gmail.com",
+    Username : "danik808@gmail.com",
+    Password : "zgnjlbavwqygnjti",
+    To : 'danik808@gmail.com',
+    From : "danik808@gmail.com",
+    Subject : "CV-Message",
+    Body : 'Name: '+name+'<br/>Email: '+email+'<br/>Message: '+message,
+}).then(
+  message => alert(message)
+);
+    }
+
+    function sendEmail2(){
+      var name = document.getElementById("name2").value;
+      var email = document.getElementById("email2").value;
+      var message = document.getElementById("message2").value;
+      Email.send({
+    Host : "smtp.gmail.com",
+    Username : "danik808@gmail.com",
+    Password : "zgnjlbavwqygnjti",
+    To : 'danik808@gmail.com',
+    From : "danik808@gmail.com",
+    Subject : "CV-Message",
+    Body : 'Name: '+name+'<br/>Email: '+email+'<br/>Message: '+message,
+}).then(
+  message => alert(message)
+);
+    }
+    </script>
 
     <!--=====================================================-->
     <!--configuration template-->

@@ -28,6 +28,14 @@ This files contents are outlined below.
 /*============================
      01. BODY
 ============================*/
+.cvlink{
+  text-decoration: none;
+  transition: all 0.3s linear;
+}
+a.cvlink:hover{
+  text-decoration: none;
+  color:grey;
+}
 body {
   background: #ffffff;
   color: #7d7d7d;
