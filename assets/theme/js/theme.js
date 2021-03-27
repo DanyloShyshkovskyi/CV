@@ -45,15 +45,9 @@
         if (el.valid()) {
           var params = $(this).serialize();
           $.ajax({
-            type: 'POST',
-            data: params,
-            url: "php/sendemail.php",
             beforeSend: function() {
               el.find('.preload-submit').removeClass('hidden');
               el.find('.message-submit').addClass('hidden');
-            },
-            success: function(res) {
-              //res = jQuery.parseJSON(res);
               setTimeout(function() {
                 el.find('.preload-submit').addClass('hidden');
                 if (res.error === null) {
@@ -62,7 +56,9 @@
                 } else {
                   el.find('.message-submit').html(res.error).removeClass('hidden');
                 }
-              }, 1000)
+              }
+           
+, 1000)
             }
           });
         }

@@ -7,10 +7,12 @@
     
 
 
-    <title>WHO I AM - PERSONAL RESUME AND PORTFOLIO</title>
+    <title>Danylo Shyshkovskyi CV</title>
     <!--favicon-->
     <link rel="apple-touch-icon" href="assets/theme/images/apple-touch-icon.png">
-    <link rel="icon" href="assets/theme/images/favicon.ico">
+    <link rel="icon" href="assets/theme/images/favicon.ico" type="image/x-icon" >
+    <link rel="shortcut icon" href="assets/theme/images/favicon.ico" type="image/x-icon">
+
 
     <!--pace (page loader) style-->
     <link href="assets/plugins/pace/pace.css" rel="stylesheet">
@@ -667,8 +669,6 @@
     <script src="https://smtpjs.com/v3/smtp.js">
     </script>
 
-<script src="js/FileSaver.min.js"></script>
-<script src="js/script.js"></script>
 
     <script type="text/javascript">
     function sendEmail1(){
@@ -684,7 +684,11 @@
     Subject : "CV-Message",
     Body : 'Name: '+name+'<br/>Email: '+email+'<br/>Message: '+message,
 }).then(
-  message => alert(message)
+  setTimeout(function() {
+                $('.preload-submit').addClass('hidden');
+                $('.message-submit').removeClass('hidden');
+                console.log();
+              }, 1000)
 );
     }
 
@@ -700,9 +704,7 @@
     From : "danik808@gmail.com",
     Subject : "CV-Message",
     Body : 'Name: '+name+'<br/>Email: '+email+'<br/>Message: '+message,
-}).then(
-  message => alert(message)
-);
+})
     }
     </script>
 
