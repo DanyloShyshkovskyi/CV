@@ -460,6 +460,17 @@ blockquote {
   -o-transition: all 0.3s ease 0s;
   -ms-transition: all 0.3s ease 0s;
 }
+.accept{
+  color: green;
+  font-weight: 400;
+  letter-spacing: 2px;
+  transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  -ms-transition: all 0.3s ease 0s;
+}
+
 .progress-wrap {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -1685,8 +1696,8 @@ textArea.form-flat {
 }
 .contact-area .form-contact-area .inner-contact {
   clear: both;
-  width: 470px;
-  padding: 60px 40px 60px 0;
+  width: 100%;
+  padding: 60px 60px 60px 60px;
   float: right;
 }
 @media (max-width: 1024px) {

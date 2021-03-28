@@ -50,12 +50,7 @@
               el.find('.message-submit').addClass('hidden');
               setTimeout(function() {
                 el.find('.preload-submit').addClass('hidden');
-                if (res.error === null) {
-                  el.trigger('reset');
-                  el.find('.message-submit').html(res.msg).removeClass('hidden');
-                } else {
-                  el.find('.message-submit').html(res.error).removeClass('hidden');
-                }
+                el.find('.message-submit').removeClass('hidden');
               }
            
 , 1000)
@@ -160,7 +155,7 @@
   //Typed Animation
   function initTyped() {
     $("#typed").typed({
-      strings: ["A Designer", "A Freelancer", "A Developer"],
+      strings: [ "A WEB-Developer","A Designer", "A Freelancer"],
       // typing speed
       typeSpeed: 300,
       // time before typing starts

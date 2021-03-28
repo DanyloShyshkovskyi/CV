@@ -515,10 +515,6 @@
           <div class="form-contact-area clearfix">
             <div class="inner-contact clearfix ">
               <!--TABS CONTACT-->
-              <ul id="myTab" class="nav nav-tabs flat-nav-tabs" role="tablist">
-                <li class="active"><a href="#tab0" role="tab" data-toggle="tab">Contact Me</a></li>
-                <li><a href="#tab1" role="tab" data-toggle="tab">Hire Me</a></li>
-              </ul>
 
               <div id="myTabContent" class="tab-content flat-tab-content">
                 <div class="tab-pane fade in active" id="tab0">
@@ -541,54 +537,13 @@
                       <div id="captcha1"></div>
                     </div>
                     <div class="form-group ">
-                      <button type="submit" onclick="sendEmail1()" class="btn btn-flat-solid primary-btn" >Send Message</button>
+                      <button type="submit" onclick="sendEmail1()" class="btn btn-flat-solid primary-btn margin-top-20" >Send Message</button>
                     </div>
-                    <div class="form-group">
-                      <div class="preload-submit hidden"><hr/> <i class="fa fa-spinner fa-spin"></i> Please Wait ...</div>
-                      <div class="message-submit error hidden"></div>
-                    </div>
+                      <div class="preload-submit hidden"><i class="fa fa-spinner fa-spin"></i> Please Wait ...</div>
+                      <div class="message-submit accept hidden margin-top-20">Message sent. Thank you for contacting me.</div>
                   </form>
                 </div>
-                <div class="tab-pane fade" id="tab1">
-                  <form method="post" id="hireForm" name="hireForm">
-                    <input type="hidden" name="subject" value="Message Hire Form">
-                    <input type="hidden" name="file" id="file-att" value="">
-                    <div class="form-group">
-                      <label>Your Name (*)</label>
-                      <input id="name2" type="text" class="form-control form-flat" name="fullname" required>
-                    </div>
-                    <div class="form-group">
-                      <label>Email (*)</label>
-                      <input id="email2"  type="email" class="form-control form-flat" name="email" required>
-                    </div>
-                    <div class="form-group">
-                      <label>Short Description About of Project (*)</label>
-                      <textarea id="message2" class="form-control form-flat" name="message" rows="8" required></textarea>
-                    </div>
-
-                    <div class="form-group">
-                      <label>Attach Your Document <span class="display-block color-dark">(only .pdf  allowed , max size 200Kb)</span></label>
-                      <div class="clearfix">						
-                        <input type="button" id="upload-btn" class="btn btn-flat-solid btn-file btn-xs btn-default  clearfix" value="Choose file">
-                        <div id="errormsg" class="clearfix error"></div>	              
-                        <div id="pic-progress-wrap" class="progress-wrap"></div>	
-                        <div id="picbox" class="attbox color-dark"></div>
-                      </div>
-                    </div>
-                    <div class="form-group">
-                      <div id="captcha2"></div>
-                    </div>
-
-                    <div class="form-group">
-                      <button type="submit"  onclick="sendEmail2()" class="btn btn-flat-solid primary-btn">Send Request</button>
-                    </div>
-
-                    <div class="form-group">
-                      <div class="preload-submit hidden"><hr/> <i class="fa fa-spinner fa-spin"></i> Please Wait ...</div>
-                      <div class="message-submit error hidden"></div>
-                    </div>
-                  </form>
-                </div>
+               
               </div><!--End Tabs-->
             </div>
           </div>
@@ -608,7 +563,6 @@
       </section><!--END CONTACT-->
 
 
-      <!--FOOTER-->
       <footer class="main-footer">
         <div class="container">
           <div class="folow-me">
@@ -675,27 +629,6 @@
       var name = document.getElementById("name1").value;
       var email = document.getElementById("email1").value;
       var message = document.getElementById("message1").value;
-      Email.send({
-    Host : "smtp.gmail.com",
-    Username : "danik808@gmail.com",
-    Password : "zgnjlbavwqygnjti",
-    To : 'danik808@gmail.com',
-    From : "danik808@gmail.com",
-    Subject : "CV-Message",
-    Body : 'Name: '+name+'<br/>Email: '+email+'<br/>Message: '+message,
-}).then(
-  setTimeout(function() {
-                $('.preload-submit').addClass('hidden');
-                $('.message-submit').removeClass('hidden');
-                console.log();
-              }, 1000)
-);
-    }
-
-    function sendEmail2(){
-      var name = document.getElementById("name2").value;
-      var email = document.getElementById("email2").value;
-      var message = document.getElementById("message2").value;
       Email.send({
     Host : "smtp.gmail.com",
     Username : "danik808@gmail.com",
