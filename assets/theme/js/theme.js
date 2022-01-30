@@ -155,7 +155,7 @@
   //Typed Animation
   function initTyped() {
     $("#typed").typed({
-      strings: [ "A WEB-Developer","A Designer", "A Freelancer"],
+      strings: [ "A Front-End Developer", "A React Developer", "A WEB Developer"],
       // typing speed
       typeSpeed: 300,
       // time before typing starts
@@ -315,7 +315,7 @@
   //Map
   function initMap() {
     $('#map-contact').gmap({
-      'center': '51.09535545251088, 16.934686384897617',
+      'center': '51.12066022000555, 17.02292059470681',
       'zoom': 15,
       scrollwheel: false,
       'disableDefaultUI': false,

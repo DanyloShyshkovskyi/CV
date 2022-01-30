@@ -1930,3 +1930,7 @@ textArea.form-flat {
   background: #ffffff;
   color: #000000;
 }
+
+p span {
+  font-weight: 600;
+}
