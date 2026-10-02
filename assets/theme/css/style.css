@@ -1940,3 +1940,24 @@ textArea.form-flat {
 p span {
   font-weight: 600;
 }
+/*== CONTACT SIMPLE ==*/
+.contact-area .contact-simple {
+  padding: 90px 15px;
+  max-width: 460px;
+  margin: 0 auto;
+}
+.contact-area .contact-simple .ic {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background: #000000;
+  color: #ffffff;
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+.contact-area .contact-simple p {
+  font-size: 16px;
+  margin-bottom: 25px;
+}
